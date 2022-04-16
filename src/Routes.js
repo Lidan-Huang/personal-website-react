@@ -1,5 +1,5 @@
 import React from "react";
-import { Switch, Route, Redirect } from "react-router-dom";
+import { Switch, Route } from "react-router-dom";
 import About from "./About";
 import Projects from "./Projects";
 import Resume from "./Resume";
@@ -10,17 +10,13 @@ import Homepage from "./Homepage";
  * Visiting a non-existent route redirects to the homepage.
  */
 
-const BASE_URL = "lidanhuang.com/";
+const BASE_URL = "/lidanhuang.com/";
 
 function Routes() {
 
   return (
     // <div className="pt-5">
       <Switch>
-
-        <Route exact path={BASE_URL}>
-          <Homepage />
-        </Route>
 
         <Route exact path={`${BASE_URL}about`}>
           <About />
@@ -34,7 +30,11 @@ function Routes() {
           <Resume />
         </Route>
 
-        <Redirect to={BASE_URL} />
+        <Route exact path={BASE_URL}>
+          <Homepage />
+        </Route>
+
+        {/* <Redirect to={BASE_URL} /> */}
       </Switch>
     // </div>
   );

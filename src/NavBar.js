@@ -1,20 +1,20 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 /** Navigation bar for site. Shows up on every page.
  *
  * Rendered by App.
  */
 
-const BASE_URL = "lidanhuang.com/";
+const BASE_URL = "/lidanhuang.com/";
 
-function Navigation() {
+function NavBar() {
   return (
     <nav className="Navigation navbar navbar-expand-md">
       <div className="container-fluid">
-        <NavLink className="navbar-brand" to={BASE_URL}>
+        <Link className="navbar-brand" to={BASE_URL}>
           Homepage
-        </NavLink>
+        </Link>
         <div className="collapse navbar-collapse">
           <ul className="navbar-nav ms-auto">
             <li className="nav-item me-4">
@@ -40,4 +40,4 @@ function Navigation() {
   );
 }
 
-export default Navigation;
+export default NavBar;
