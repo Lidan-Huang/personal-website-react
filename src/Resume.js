@@ -1,5 +1,13 @@
+/** Show resume
+ * Props: none
+ * Routes -> Resume
+ */
+
 function Resume() {
-  return null;
+  return (
+    <>
+    </>
+  );
 }
 
 export default Resume;

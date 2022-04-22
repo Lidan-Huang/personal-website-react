@@ -1,42 +1,41 @@
 import React from "react";
-import { Switch, Route } from "react-router-dom";
+import { Switch, Route, Redirect } from "react-router-dom";
 import About from "./About";
 import Projects from "./Projects";
 import Resume from "./Resume";
 import Homepage from "./Homepage";
 
 /** Site-wide routes.
- *
+ * Props: none
  * Visiting a non-existent route redirects to the homepage.
  */
 
-const BASE_URL = "/lidanhuang.com/";
+// const BASE_URL = "/lidanhuang.com/";
 
 function Routes() {
 
   return (
-    // <div className="pt-5">
+    <div className="Routes">
       <Switch>
-
-        <Route exact path={`${BASE_URL}about`}>
+        
+        <Route exact path="/">
+          <Homepage />
+        </Route>
+        <Route exact path="/about">
           <About />
         </Route>
 
-        <Route exact path={`${BASE_URL}projects`}>
+        <Route exact path="/projects">
           <Projects />
         </Route>
 
-        <Route exact path={`${BASE_URL}resume`}>
+        <Route exact path="/resume">
           <Resume />
         </Route>
 
-        <Route exact path={BASE_URL}>
-          <Homepage />
-        </Route>
-
-        {/* <Redirect to={BASE_URL} /> */}
+        <Redirect to="/" />
       </Switch>
-    // </div>
+    </div>
   );
 }
 
