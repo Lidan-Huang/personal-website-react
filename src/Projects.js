@@ -22,34 +22,26 @@ function Projects() {
         </div>
 
         <div className="container d-flex justify-content-between flex-nowrap">
-          <div className="row justify-content-around flex-nowrap align-items-center" >
+          <div className="row justify-content-around align-items-center" >
             <div className="project-img-container col-6 col-lg-6 col-md-8 rounded mt-2 mb-4">
-              <div>
-                <img className="jobly-img img-fluid" src={`${jobly}`} alt="jobly homepage" height="500" width="600" />
-              </div>
-
-              <div className="description-container ">
-                <div className="row d-inline-flex ">
-                  <div className="col-6 col-lg-6 col-md-6 flex-row justify-content-evenly rounded mt-2 ">
-                    <h3 className="titile">Jobly</h3>
-                    {/* <span className="external-links"> */}
-                    <Link className="btn btn-light fw-bold me-2" to={{ pathname: "http://jobly.demo.lidanhuang.com/" }} target="_blank">Demo</Link>
-                    {/* </span> 
-                    <span className="external-links">  */}
-                    <div className="col-4 col-lg-4 col-md-6 rounded mt-2 ">
-                      <Link className="btn btn-light fw-bold" to={{ pathname: "https://github.com/Lidan-Huang/react-jobly" }} target="_blank">GitHub</Link>
-                      {/* </span>  */}
-                    </div>
-                  </div>
+              <img className="jobly-img img-fluid" src={`${jobly}`} alt="jobly homepage" height="500" width="600" />
+            
+            <div className="description-container ">
+              <div className="row justify-content-evenly">
+                <div className="col-6 col-lg-6 col-md-6 flex-row justify-content-evenly rounded mt-2 ">
+                  <h3 className="title">Jobly</h3>
+                  <Link className="btn btn-light fw-bold me-2" to={{ pathname: "http://jobly.demo.lidanhuang.com/" }} target="_blank">Demo</Link>
+                  <Link className="btn btn-light fw-bold" to={{ pathname: "https://github.com/Lidan-Huang/react-jobly" }} target="_blank">GitHub</Link>
                 </div>
-
-                <p className="description-container pt-2">
-                  Jobly is a responsive single page React web application for job searching. Users need authentication by registering or logging in to reach the private routes. Users could browse all jobs by job titles or company name, they could also search companies by company names. Users can update their profile.
-                </p>
-                <p className="despcription-skills">React | Node | Express | PostgreSQL</p>
               </div>
+
+              <p className="description-container pt-2">
+                Jobly is a responsive single page React web application for job searching. Users need authentication by registering or logging in to reach the private routes. Users could browse all jobs by job titles or company name, they could also search companies by company names. Users can update their profile.
+              </p>
+              <p className="despcription-skills">React | Node | Express | PostgreSQL</p>
             </div>
           </div>
+        </div>
 
           <div className="row justify-content-around flex-nowrap align-items-center" >
             <div className="project-img-container col-6 col-lg-6 col-md-8 rounded mt-2 mb-4">
@@ -60,7 +52,7 @@ function Projects() {
               <div className="description-container ">
                 <div className="row d-inline-flex ">
                   <div className="col-4 col-lg-4 col-md-6 flex-row justify-content-evenly rounded mt-2 ">
-                    <h3 className="titile">Warbler</h3>
+                    <h3 className="title">Warbler</h3>
                     {/* <span className="external-links"> */}
                     <Link className="btn btn-light fw-bold me-2" to={{ pathname: "https://r24-flask-warbler-lidan.herokuapp.com/" }} target="_blank">Demo</Link>
                     {/* </span> 
