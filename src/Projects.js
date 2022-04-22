@@ -2,6 +2,13 @@ import warbler from "./static/warbler.png";
 import jobly from "./static/jobly.png";
 import { Link } from "react-router-dom";
 
+
+/**Show two projects Jobly and Warbler
+ * Props: none
+ * 
+ * Routes -> Projects
+ */
+
 function Projects() {
 
 
