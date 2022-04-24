@@ -17,10 +17,6 @@ function Routes() {
   return (
     <div className="Routes">
       <Switch>
-        
-        <Route exact path="/">
-          <Homepage />
-        </Route>
         <Route exact path="/about">
           <About />
         </Route>
@@ -33,7 +29,11 @@ function Routes() {
           <Resume />
         </Route>
 
-        <Redirect to="/" />
+        <Route exact path="/">
+          <Homepage />
+        </Route>
+
+        {/* <Redirect to="/" /> */}
       </Switch>
     </div>
   );
