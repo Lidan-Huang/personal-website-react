@@ -28,18 +28,20 @@ function NavBar() {
             Lidan
           </Link>
         </h1>
-
-        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span className="navbar-toggler-icon"></span>
-        </button>
-        <div id="navbar" className="navbar order-last order-lg-0 collapse navbar-collapse" id="navbarSupportedContent">
-          <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-            <li className="nav-item"><NavLink className="nav-link active" to="/">Home</NavLink></li>
-            <li className="nav-item"><NavLink className="nav-link" to="/About">About</NavLink></li>
-            <li className="nav-item"><NavLink className="nav-link" to="/Projects">Projects</NavLink></li>
-            <li className="nav-item"><NavLink className="nav-link" to={`${Pdf}`} onClick={onResumeClick}>Resume</NavLink></li>
-          </ul>
-          {/* <i className="bi bi-list mobile-nav-toggle"></i> */}
+        
+        <div className="d-inline-flex">
+          <button className="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span className="navbar-toggler-icon"></span>
+          </button>
+          <div id="navbar" className="navbar order-last order-lg-0 collapse navbar-collapse" id="navbarSupportedContent">
+            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+              <li className="nav-item"><NavLink className="nav-link active" to="/">Home</NavLink></li>
+              <li className="nav-item"><NavLink className="nav-link" to="/About">About</NavLink></li>
+              <li className="nav-item"><NavLink className="nav-link" to="/Projects">Projects</NavLink></li>
+              <li className="nav-item"><NavLink className="nav-link" to={`${Pdf}`} onClick={onResumeClick}>Resume</NavLink></li>
+            </ul>
+            {/* <i className="bi bi-list mobile-nav-toggle"></i> */}
+          </div>
         </div>
 
         <div className="header-social-links">
