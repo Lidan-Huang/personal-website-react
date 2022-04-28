@@ -39,7 +39,7 @@ function NavBar() {
             <li className="nav-item"><NavLink className="nav-link" to="/Projects">Projects</NavLink></li>
             <li className="nav-item"><NavLink className="nav-link" to={`${Pdf}`} onClick={onResumeClick}>Resume</NavLink></li>
           </ul>
-          <i className="bi bi-list mobile-nav-toggle"></i>
+          {/* <i className="bi bi-list mobile-nav-toggle"></i> */}
         </div>
 
         <div className="header-social-links">
